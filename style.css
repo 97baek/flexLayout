@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+input {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e0e0e0;
+  padding: 16px 24px;
+}
+
+.header .form_search {
+  display: flex;
+}
+
+.header .form_search .form_text {
+  flex: 1 1 70%;
+  resize: both;
+  border-radius: 4px;
+}
+
+.header .form_search .form_button {
+  flex: 1 1 25%;
+  margin-left: 5%;
+  width: 100%;
+  height: auto;
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.header .form_search .form_button:hover {
+  cursor: pointer;
+}
+
+.nav {
+  background: dodgerblue;
+  padding: 16px 0;
+}
+
+.nav .nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav .nav-list a {
+  color: white;
+}
+
+.left {
+  flex: 1 1 15%;
+}
+
+.left info-list {
+  list-style: ;
+}
+
+.left .info-list .info-item {
+  padding: 8px 8px 8px 24px;
+}
+
+.left .user-list .user-item {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  padding: 8px;
+}
+
+.left .user-list .user-item .user-photo {
+  margin: 0;
+}
+
+.left .user-list .user-item .user-name {
+  flex: 1;
+}
+
+.left .user-list .user-item .user-photo img {
+  width: 60px;
+  height: 60px;
+  border: 2.5px solid black;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.contents {
+  flex: 1 1 70%;
+  background: #e0e0e0;
+}
+
+.contents .cont-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.contents .cont-list .cont-item {
+  flex: 1 1 28%;
+  background: #fff;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contents .cont-list .cont-item .card-image {
+  width: 100%;
+  height: 300px;
+  border: 1px solid grey;
+  background-color: grey;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.contents .cont-list .cont-item .card-desc {
+  padding: 8px;
+}
+
+.right {
+  flex: 1 1 15%;
+  background: #494949;
+}
+
+.right .user-list .user-item {
+  display: flex;
+  padding: 16px;
+}
+
+.right .user-list .user-item .user-photo {
+  background-image: url(/img/emoji.jpg);
+  width: 60px;
+  height: 60px;
+  border: 2.5px solid black;
+  border-radius: 50%;
+  margin-right: 16px;
+  background-color: grey;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.right .user-list .user-item .message-content {
+  color: #fff;
+  flex: 1 1 60%;
+}
+
+.footer {
+}
